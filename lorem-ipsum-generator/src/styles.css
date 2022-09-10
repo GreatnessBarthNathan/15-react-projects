@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightgray;
+}
+main {
+  text-align: center;
+  margin-top: 80px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+label {
+  font-weight: bold;
+}
+input {
+  width: 50px;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+button {
+  color: blue;
+  font-weight: bold;
+  padding: 5px;
+  background: lightblue;
+  border: 1px solid blue;
+  cursor: pointer;
+  border-radius: 3px;
+}
+div.container {
+  width: 800px;
+  margin: auto;
+}
+div.container p {
+  margin: 20px;
+}
+
+@media (max-width: 570px) {
+  div.container {
+    width: 500px;
+  }
+main h1{
+  font-size: 25px;
+}
+}

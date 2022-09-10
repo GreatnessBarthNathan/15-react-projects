@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: whitesmoke;
+}
+/* 
+==========
+Navbar
+==========
+ */
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 5px 8px black;
+  background: white;
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.logo {
+  text-decoration: none;
+  color: black;
+}
+.logo h1 {
+  font-weight: bold;
+  text-shadow: 0 1px 2px black;
+  letter-spacing: 2px;
+}
+.logo span {
+  color: darkgreen;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links li {
+  font-size: 1.5rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s linear;
+}
+.nav-links li a:hover {
+  color: darkgreen;
+}
+/* 
+=========
+About
+=========
+*/
+.about {
+  margin: 100px auto 50px auto;
+  width: 50%;
+}
+.about h1 {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+.about p {
+  font-size: 20px;
+  line-height: 40px;
+  color: darkslategray;
+  letter-spacing: 2px;
+}
+/* 
+=======
+Error page
+=======
+*/
+.error-page {
+  text-align: center;
+  width: 400px;
+  margin: 80px auto 0 auto;
+}
+.error-container h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+.error-container a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: darkgreen;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+}
+.error-container a:hover {
+  background: lightgreen;
+  color: black;
+  font-weight: bold;
+}
+/* 
+================
+FORM
+================
+*/
+.form-container {
+  width: 500px;
+  margin: 80px auto;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px black;
+  padding: 10px 30px;
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.search-form label {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: darkgreen;
+  letter-spacing: 2px;
+}
+.search-form input {
+  padding: 10px;
+  background: whitesmoke;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+/* 
+================
+LOADING
+================
+*/
+.loading {
+  text-align: center;
+  font-size: 40px;
+}
+/* 
+================
+COCKTAIL
+================
+*/
+.no-result {
+width: 500px;
+margin: auto;
+text-align: center;
+text-transform: capitalize;
+font-size: 30px;
+letter-spacing: 2px;
+font-weight: bold;
+}
+.wrapper {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.heading {
+  font-size: 35px;
+  text-transform: capitalize;
+}
+.cocktails-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 30px;
+}
+/* 
+===============
+Individual Cocktail
+===============
+*/
+.cocktail {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px darkslategray;
+}
+.image {
+  width: 100%;
+  height: 300px;
+}
+.detail {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  letter-spacing: 2px;
+  color: darkslategray;
+}
+.detail h1 {
+  font-size: 35px;
+}
+.detail p {
+  color: gray;
+}
+.detail a {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  color: white;
+  background: darkgreen;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+}
+.detail a:hover {
+  background: lightgrey;
+  color: black;
+}
+
+/* 
+================
+single cocktail
+================
+*/
+.single-cocktail-wrapper {
+  width: 85%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cocktail-content {
+  width: 100%;
+}
+.cocktail-content header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cocktail-content header a {
+  text-decoration: none;
+  color: white;
+  background: darkgreen;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
+}
+.cocktail-content header a:hover {
+  background: lightgreen;
+  color: black;
+}
+.cocktail-content header h1 {
+  font-size: 40px;
+  margin: 25px 0;
+}
+.cocktail-content section {
+  display: flex;
+  gap: 45px;
+}
+.single-image {
+  height: 450px;
+  width: 450px;
+  border-radius: 5px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.description h3 {
+  line-height: 30px;
+}
+.description span {
+  background: transparent;
+}
+.description .sub {
+  background: rgb(183, 241, 183);
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.ingredient {
+  margin-right: 7px;
+}

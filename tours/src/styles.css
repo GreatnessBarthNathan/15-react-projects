@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 50px auto;
+  text-align: center;
+}
+.title h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.underline {
+  background: blue;
+  width: 100px;
+  height: 5px;
+  margin: auto;
+}
+.single-tour {
+  width: 350px;
+  margin: 30px auto;
+  box-shadow: 0 2px 4px black;
+  text-align: center;
+  border-radius: 10px;
+}
+.single-tour img {
+  width: 350px;
+  height: 350px;
+  margin: 10px 0;
+  box-shadow: 0 1px 2px blue;
+}
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+}
+.tour-info h4 {
+  font-size: 0.8rem;
+}
+.tour-price {
+  color: blue;
+  background: lightblue;
+  padding: 2px;
+  border-radius: 3px;
+}
+article p {
+  font-size: 13px;
+  padding: 10px;
+  text-align: left;
+}
+button {
+  margin-bottom: 20px;
+    padding: 3px 25px;
+    border-radius: 5px;
+    background: slateblue;
+    border: none;
+    color: white;
+}
+article button {
+  margin-bottom: 20px;
+  padding: 3px 25px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+}
+.read-more {
+  border: none;
+  padding: 0;
+  color: blue;
+  text-transform: capitalize;
+  background: transparent;
+  margin-left: 5px;
+  font-size: 11px;
+}

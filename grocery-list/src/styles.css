@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: whitesmoke;
+}
+main {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 3px 5px darkslategray;
+  margin-top: 100px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  position: relative;
+}
+main h2 {
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+form input {
+  width: 80%;
+  padding: 5px;
+  border: none;
+  background: rgb(213, 239, 248);
+}
+form button {
+width: 20%;
+padding: 5px;
+border: none;
+background: rgb(29, 150, 190);
+}
+.clear-btn {
+  border: none;
+  background: transparent;
+  text-transform: capitalize;
+  color: red;
+  font-weight: bold;
+}
+.alert {
+  position: absolute;
+  width: 90%;
+  top: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.alert-success {
+background: lightgreen;
+}
+.alert-danger {
+background: pink;
+}
+.item {
+  display: flex;
+  background: rgb(213, 239, 248);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.button-container {
+  display: flex;
+  gap: 5px;
+}
+.edit-btn {
+  background: transparent;
+  border: none;
+  color: green;
+  font-size: 10px;
+}
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 10px;
+}
+@media (max-width: 570px) {
+  main {
+      width: 300px;
+    }
+    .alert {
+      top: 10px;
+      left: 15px;
+    }
+.edit-btn {
+  font-size: 15px;
+}
+.delete-btn {
+  font-size: 15px;
+}
+.button-container {
+  gap: 15px;
+}
+}

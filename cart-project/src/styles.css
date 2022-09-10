@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --typeBlue: #1919ff;
+  --letterColor: darkslategray;
+}
+body {
+  background: whitesmoke;
+}
+nav {
+background: var(--typeBlue);
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+.nav-center > h3 {
+  font-size: 40px;
+}
+.nav-container{
+  position: relative;
+}
+.nav-container h1 {
+  font-size: 45px;
+}
+.amount-container {
+  background: lightblue;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.empty {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 60px;
+}
+.empty h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.empty p {
+  margin-top: 50px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.loading {
+ text-align: center;
+ margin-top: 100px;
+}
+.cart-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+.cart-container h1 {
+  font-size: 40px; 
+  text-transform: uppercase;
+  text-align: center;
+}
+.content-container {
+  margin: 30px 0;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content img {
+  width: 100px;
+  height: 100px;
+}
+.detail {
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+}
+.detail > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.detail h3 {
+  color: var(--letterColor);
+}
+.detail button {
+  border: none;
+  background: transparent;
+  color: var(--typeBlue);
+  font-weight: bold;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-container button {
+   color: var(--typeBlue);
+   background: transparent;
+   border: none;
+   font-size: 20px;
+}
+hr {
+  height: 3px;
+  background: black;
+  margin-bottom: 10px;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: darkslategray;
+}
+footer {
+  text-align: center;
+}
+footer button {
+  background: transparent;
+  border: 1px solid red;
+  border-radius: 4px;
+  color: red;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: bold;
+}
+footer button:hover {
+  background: pink;
+}
+@media (max-width: 570px) {
+  .nav-center {
+    width: 80%;
+  }
+  .cart-container {
+    width: 90%;
+  }
+.cart-container h1 {
+  font-size: 30px;
+}
+}

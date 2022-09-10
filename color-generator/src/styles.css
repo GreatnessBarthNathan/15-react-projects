@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lavender;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.container h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+input {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  background: #4d4dff;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+}
+.color-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.color {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+}
+.color h3, .color p {
+  margin: 10px;
+}
+.lighter-color {
+  color: white;
+}
+.red-border {
+  border: 2px solid red;
+}
+.alert {
+  font-size: 14px;
+}
+.note {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 570px) {
+.container {
+width: 350px;
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: auto;
+margin-top: 50px;
+}
+.container h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+form {
+  width: 200px;
+}
+input {
+  padding: 5px;
+  font-size: 15px;
+  width: 70%;
+}
+.btn {
+  padding: 5px;
+  font-size: 15px;
+  width: 30%;
+}
+.color-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.color {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+.color h3,
+.color p {
+  margin: 5px;
+  font-size: 13px;
+}
+}

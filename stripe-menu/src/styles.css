@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --darkblue: #000019;
+  --mainTransition: all 0.5s linear;
+  --letterColor: darkslategray;
+}
+body {
+  background: url('https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?cs=srgb&dl=pexels-gradienta-7130560.jpg&fm=jpg&w=1280&h=853');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav-header {
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 3px 5px var(--darkblue);
+}
+.link-btn {
+  background: transparent;
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 0 20px;
+}
+nav > button, .content button {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.toggle-btn {
+  display: none;
+}
+.side-bar-container {
+  display: none;
+}
+.side-bar {
+  display: none;
+}
+.container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 50px auto;
+  gap: 200px;
+  margin-top: 60px;
+}
+.container img {
+  height: 500px;
+}
+.content h1 {
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: bold;
+  color: var(--darkblue);
+  margin-bottom: 30px;
+}
+.content p {
+  font-size: 25px;
+  color: var(--letterColor);
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.submenu {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  transition: var(--mainTransition);
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.submenu::before {
+  content: '';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid white;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+}
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+.links li {
+  margin: 0 20px 10px 0;
+}
+.col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.col-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--letterColor);
+}
+@media (max-width: 570px) {
+body {
+  overflow: hidden;
+}
+.nav-links {
+    display: none;
+  }
+nav > button {
+  display: none;
+}
+.toggle-btn{
+  display: block;
+  background: black;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.container img {
+  display: none;
+}
+.container {
+  display: block;
+  width: 90%;
+  justify-content: center;
+  margin: 50px auto;
+  gap: 200px;
+  margin-top: 60px;
+}
+.container img {
+  height: 500px;
+}
+.content h1 {
+  font-size: 60px;
+  line-height: 60px;
+}
+.content p {
+  font-size: 15px;
+  color: var(--letterColor);
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.submenu{
+  display: none;
+}
+.links {
+  display: none;
+}
+.close-sidebar {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  z-index: -1;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+.side-bar-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: scale(1);
+  transition: var(--mainTransition);
+}
+
+.side-bar {
+  display: block;
+  width: 90%;
+  height: 95%;
+  background: white;
+  border-radius: 10px;
+  padding: 35px;
+  text-transform: capitalize;
+  position: relative;
+}
+.side-bar ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  margin: 0 0 20px 0;
+}
+.side-bar h4 {
+  margin: 0 0 10px 0;
+}
+.side-bar ul li {
+  margin: 0 0 8px 0;
+}
+.side-bar ul li a {
+  display: flex;
+  align-items: center;
+  color: var(--letterColor);
+  gap: 10px;
+}
+.side-bar button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: red;
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  transition: var(--mainTransition);
+}
+}
