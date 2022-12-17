@@ -79,4 +79,4 @@ export const data = [
     img: "https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg?cs=srgb&dl=pexels-pixabay-361184.jpg&fm=jpg&h=200&w=200&fit=crop",
     desc: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit voluptate quisquam libero quasi sapiente eaque iste vero, laborum dolores.",
   },
-];
+]

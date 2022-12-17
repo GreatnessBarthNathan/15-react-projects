@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles.css';
-import App from './App';
+import React from "react"
+import ReactDOM from "react-dom/client"
+import "./styles.css"
+import App from "./App"
 
-function Index () {
-  return (
-    <App/>
-  )
+const root = ReactDOM.createRoot(document.getElementById("root"))
+function Index() {
+  return <App />
 }
 
-ReactDOM.render(<Index/>, document.getElementById('root'))
+root.render(<Index />)
