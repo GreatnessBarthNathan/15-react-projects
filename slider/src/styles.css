@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,8 +8,8 @@ body {
 }
 .title {
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
   font-size: 25px;
   margin-top: 70px;
@@ -38,7 +38,7 @@ align-items: center;
   overflow: hidden;
   background: pink;
 }
- section {
+section {
   background: white;
   text-align: center;
   width: 100%;
@@ -52,9 +52,9 @@ align-items: center;
   overflow: hidden;
 }
 section img {
-border-radius: 50%;
-box-shadow: 0 5px 10px darkgray;
- margin: 10px 0;
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+  margin: 10px 0;
 }
 section h2 {
   color: brown;
@@ -82,24 +82,26 @@ section p {
   justify-content: space-between;
   width: 80%;
 }
-.prev, .next {
+.prev,
+.next {
   color: white;
   background: darkslategrey;
   padding: 5px;
   border: none;
-  border-radius: 3px;  
-} 
-.prev:hover, .next:hover {
+  border-radius: 3px;
+}
+.prev:hover,
+.next:hover {
   background: brown;
 }
 
 .active-slide {
   transform: translateX(0);
-  opacity: 1; 
+  opacity: 1;
 }
 .previous-slide {
-transform: translateX(-100%);
-opacity: 0;
+  transform: translateX(-100%);
+  opacity: 0;
 }
 .next-slide {
   transform: translateX(100%);
@@ -108,16 +110,16 @@ opacity: 0;
 
 @media (max-width: 570px) {
   .title {
-      font-size: 20px;
-      margin-top: 70px;
-    }
-    .title span {
-      font-weight: bold;
-      font-family: verdana;
-      color: brown;
-      font-size: 25px;
-    }
-.container {
-  width: 500px;
-}
+    font-size: 20px;
+    margin-top: 70px;
+  }
+  .title span {
+    font-weight: bold;
+    font-family: verdana;
+    color: brown;
+    font-size: 25px;
+  }
+  .container {
+    width: 500px;
+  }
 }
