@@ -40,7 +40,7 @@ function AppProvider ({children}) {
     useEffect(()=> {
         dispatch({signal: 'GET-TOTALS'})
     }, [state.cart])
-    return <context.Provider value={{...state, clearCart, removeItem, increase, decrease}}>
+    return <context.Provider value={{...state, increase, decrease, clearCart, removeItem}}>
         {children}
     </context.Provider>
 }
